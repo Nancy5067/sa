@@ -1,0 +1,19 @@
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_v1_5
+from Crypto import Random
+import binascii
+
+random=Random.new().read
+key=RSA.generate(1024,random)
+
+message=b'MARWA PARKAR'
+cipher=PKCS1_v1_5.new(key)
+text=cipher.encrypt(message)
+
+#encryptd_message=rsa.encrypt(message,pubkey,padding=rsa.pkcs1.OAEP)
+
+print("ENCRYPTED MESSAGE IS", binascii.hexlify(text))
+
+
+text2=cipher.decrypt(text,"utf-8")
+print("DE-CRYPTED MESSAGE IS",text2)
