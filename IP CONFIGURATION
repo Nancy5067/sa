@@ -1,0 +1,6 @@
+ipconfig
+ipconfig/all
+ipconfig /displaydns : This command shows the contents of the DNS resolver cache on your Windows system. It includes a list of recently resolved DNS names and their corresponding IP addresses.
+ipconfig /flushdns
+
+wmic os get osarchitecture
