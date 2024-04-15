@@ -1,0 +1,9 @@
+Step-1: Open UiPath Studio and create a new Process.
+Step-2: Add a Input dialog, smtp mail message and message box.
+Step-3: Enter port,server name ,gmail and gmail password.
+for server address, enter smtp.gmail.com.
+For Port, enter one of the following numbers:
+For SSL, enter 465.
+For TLS, enter 587.
+Step-4: Now run the process and enter the recipient’s email address.
+Step 5: - The recipients should receive mail something like this.
