@@ -1,0 +1,35 @@
+Step1: Running the ifconfig command to find the current network interface configuration information
+ifconfig
+Step 2 :Creating the directory in the kali system using commands:
+cd /home
+mkdir kc
+cd kc
+cat> abc.txt
+ls
+Step 3: We will run apt update command to update the package index files on the system, which contain 
+information about available packages and their versions
+- apt update
+
+Step 4: We will run the command apt install openssh-server to install Open SSH Serve
+- apt install openssh-server
+
+Step 5: Running ufw status to check whether the firewall is active or not .
+- ufw status
+
+Step 6: Runnning the command ufw enable to enable the firewall and ufw status to check whether the 
+firewall is active or not .
+Running ufw allow 22/tcp to allow connection with tcp port which specifically associated with the Secure 
+Shell (SSH) protocol, which provides secure remote administration and secure file transfer capabilities
+
+- ufw enable
+-ufw allow 22/tcp
+
+Step7: Checking the status of the ssh port and if inactive getting started
+service ssh start
+
+Step 8: Opening the Putty and entering the ip address of the kali system and allowing the connection type as 
+SSH
+in putty
+sudo -i
+
+make a file and run in kali again
