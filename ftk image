@@ -1,0 +1,8 @@
+Step-1: Open FTK Image Manager and select Create Disk Image.
+Step-2: Select the source as physical type and select the physical drive.
+Step-3: Add image destination and select the image type as raw.
+Step-4: Add the evidence item information and select the image destination, set the image filename as FTKimg and set Image Fragment Size to 0.
+Step-5: It will start creating the image file and then you can verify the results. 
+Step-6: Now, create a new Disk Image and select Image file as source, then add the source path of the FTK Image we have created earlier. 
+Step-7: As we can see from the image we have created, is showing its content.
+Step-8: We can export the files from the image.
