@@ -1,4 +1,0 @@
-Step-1: Open Wireshark and either you can load the pre-captured files (pcap/pcapng) or start a live capture through the network. 
-Step-2: Start the Wireshark in background and go to an unsecure website so we can fetch the credentials. Sample Website: http://testphp.vulnweb.com/login.php 
-Step-3: Now, stop capturing the data packets and go to search filter and type http, here all http protocol related packets will be displayed. 
-Step-4: To get the exact packet, type http.request.method=="POST" in the display filter and select the packet and as we can see the credentials have been revealed. 
