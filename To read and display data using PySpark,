@@ -1,0 +1,14 @@
+# To read and display data using PySpark, demonstrating the ability to handle large datasets efficiently.
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName('read data eg').getOrCreate()
+df = spark.read.option("Header",True).csv('Employee.csv')
+df.show()
+df.show(5)
+df.printSchema()
+df.select("Age").show()
+df.select("Age").show(3)
+df.filter(df["Age"]>30).show()
+pandas_df = df.toPandas()
+print(pandas_df.head())
+print(pandas_df.tail())
+spark.stop()
